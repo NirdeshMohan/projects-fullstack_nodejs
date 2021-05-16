@@ -1,0 +1,33 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" cobtent="width-device-width, initial-scale=1.0">
+        <title><%= title %></title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="site-title">
+                <a class="navbar-brand" href="/"><h1>Nirdesh Blog</h1></a>
+                <p>Net Nirdesh Sites</p>
+            </div>
+            <ul>
+                <li><a class="navbar-brand" href="/">Blogs</a></li>
+                <li><a class="navbar-brand" href="/about">About</a></li>
+                <li><a class="navbar-brand" href="/blogs/create">New Blog</a></li>
+            </ul>
+        </nav>
+        <div class="create-blog content">
+            <form action="/blogs" method="post">
+                <label for="title">Blog Title</label>
+                <input type="text" id="title" name="title" required>
+                <label for="snippet">Blog Snippet</label>
+                <input type="text" id="snippet" name="snippet" required>
+                <label for="body">Blog Body</label>
+                <textarea id="body" name="body" required></textarea>
+                <button>Submit</button>
+            </form>            
+        </div>
+
+    </body>
+</html>
